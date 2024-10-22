@@ -1,9 +1,10 @@
+// Función para mostrar la sección correspondiente
 function mostrarSeccion(seccionId) {
-    // Ocultar todas las secciones
+    // Oculta todas las secciones
     const secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(seccion => seccion.style.display = 'none');
-
-    // Mostrar la sección seleccionada
-    const seccionAMostrar = document.getElementById(seccionId);
-    seccionAMostrar.style.display = 'block';
+    secciones.forEach(seccion => {
+        seccion.classList.remove('visible'); // Elimina la clase visible
+    });
+    // Muestra la sección correspondiente
+    document.getElementById(seccionId).classList.add('visible'); // Añade la clase visible
 }
