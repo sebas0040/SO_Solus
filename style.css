@@ -17,9 +17,24 @@ header {
     z-index: 1000;
     
     display: flex; /* Usar flexbox */
-    flex-wrap: wrap; /* Permite que los botones se alineen en múltiples filas si es necesario */
+    flex-wrap: wrap;/* Permite que los botones se alineen en múltiples filas si es necesario */
     justify-content: center; /* Centrar los botones horizontalmente */
-}
+ } 
+/* .cabeza{ */
+    /* background-color: #d32020;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+} */
 
 button {
     background-color: #555;
