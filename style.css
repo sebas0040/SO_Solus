@@ -59,3 +59,62 @@ button:hover {
 .seccion.active {
     display: block; /* Sección visible cuando está activa */
 }
+
+/* Estilo general para la sección */
+#justificacion {
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el título */
+#justificacion h2 {
+    color: #2c3e50; /* Color de texto oscuro */
+    font-size: 24px;
+    text-align: center; /* Centrar el título */
+    margin-bottom: 15px;
+}
+
+/* Estilo para el párrafo introductorio y de cierre */
+#justificacion p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6; /* Mejorar la legibilidad */
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de ventajas */
+#justificacion ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+}
+
+/* Estilo para los elementos de la lista */
+#justificacion ul li {
+    background-color: #ecf0f1; /* Fondo claro para cada ítem */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #3498db; /* Barra de color a la izquierda */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el texto en negrita */
+#justificacion ul li strong {
+    color: #2980b9; /* Color azul para destacar */
+}
+
+/* Estilo para el texto en cursiva */
+#justificacion ul li em {
+    color: #7f8c8d;
+}
+
+/* Efecto hover para los elementos de la lista */
+#justificacion ul li:hover {
+    background-color: #d6eaf8; /* Cambiar el fondo al pasar el mouse */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el ítem */
+}
+
