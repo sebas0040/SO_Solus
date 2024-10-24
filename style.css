@@ -59,3 +59,73 @@ button:hover {
 .seccion.active {
     display: block; /* Sección visible cuando está activa */
 }
+
+/* General styling for the section */
+#historia {
+    background-color: #fafafa;  /* Suave fondo claro */
+    padding: 40px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;  /* Texto oscuro para mejor contraste */
+    line-height: 1.8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#historia h1 {
+    font-size: 32px;
+    color: #1abc9c;  /* Verde agua para el título principal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#historia h3 {
+    font-size: 24px;
+    color: #3498db;  /* Azul para subtítulos */
+    margin-top: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+#historia h4 {
+    font-size: 20px;
+    color: #e74c3c;  /* Rojo para los títulos menores */
+    margin-top: 20px;
+}
+
+#historia p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;  /* Justifica el texto para una mejor presentación */
+}
+
+#historia img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;  /* Redondea la imagen para un efecto moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#historia p[style="font-size: 11px;"] {
+    text-align: center;
+    font-style: italic;
+    margin-top: -10px;
+    color: #7f8c8d;  /* Color gris tenue para el pie de foto */
+}
+
+#historia ul {
+    margin-left: 20px;
+}
+
+#historia li {
+    margin-bottom: 10px;
+}
+
+#historia a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#historia a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
