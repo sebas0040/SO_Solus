@@ -59,3 +59,72 @@ button:hover {
 .seccion.active {
     display: block; /* Sección visible cuando está activa */
 }
+
+/* General styling for the section */
+#sitios {
+    background-color: #f5f5f5;  /* Light background */
+    padding: 30px;
+    border-radius: 10px;  /* Rounded corners */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+}
+
+#sitios h2 {
+    font-size: 28px;
+    color: #2c3e50;  /* Darker color for header */
+    border-bottom: 2px solid #3498db;  /* Line below the title */
+    padding-bottom: 10px;
+}
+
+#sitios p {
+    font-size: 16px;
+    color: #34495e;  /* Muted color for paragraphs */
+    line-height: 2;
+    margin: 15px 0;
+}
+
+#sitios a {
+    color: #3498db;  /* Links with blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sitios a:hover {
+    color: #2980b9;  /* Darker color on hover */
+}
+
+#sitios ul {
+    list-style-type: none;  /* Remove default bullet points */
+    padding: 0;
+}
+
+#sitios ul li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#sitios ul li:hover {
+    background-color: #bdc3c7;  /* Change background on hover */
+}
+
+#sitios ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#sitios ul ul li {
+    background-color: transparent;
+    padding: 5px;
+}
+
+#sitios ul ul li a {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#sitios ul ul li a:hover {
+    text-decoration: underline;
+}
