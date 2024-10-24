@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Informativa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .seccion {
+            display: none; /* Oculta todas las secciones por defecto */
+        }
+        .visible {
+            display: block; /* Muestra la sección visible */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación con botones -->
+    <header class="cabeza">
+        <nav>
+            <button onclick="mostrarSeccion('historia')">Historia</button>
+            <button onclick="mostrarSeccion('instalacion')">Instalación</button>
+            <button onclick="mostrarSeccion('sitios')">Sitios de Interés</button>
+            <button onclick="mostrarSeccion('justificacion')">¿Por qué instalar?</button>
+            <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+        </nav>
+    </header>
+
+    <!-- Secciones de contenido -->
+    <section id="historia" class="seccion visible">
+        <!-- Byron coronel -->
+        <h2>Historia del Sistema Operativo</h2>
+        <p>Aquí va la información sobre la historia...</p>
+
+    </section>
+
+    <section id="instalacion" class="seccion">
+        <!-- Sebastian Armero -->
+        <h2>Instalación y Configuración</h2>
+        <p>Aquí va la información sobre la instalación...</p>
+        <iframe width="779" height="487" src="https://www.youtube.com/embed/Bn4rL1emKzk?list=RDBn4rL1emKzk" title="AMANECIENDO - Adolfo Echeverria (cumbia colombiana)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>                                
+
+    <section id="sitios" class="seccion">
+        <!-- Marlon Hernandes -->
+        <h2>Sitios de Interés</h2>
+        <p>Aquí va la información sobre sitios de interés...</p>
+    </section>
+
+    <section id="justificacion" class="seccion">
+        <!-- Julian Florez -->
+        <h2>¿Por qué instalar este Sistema Operativo?</h2>
+        <p>Aquí va la justificación para instalar el sistema...</p>
+
+
+    </section>
+
+    <section id="comentarios" class="seccion">
+        <!-- Marlon Hernandes -->
+        <h2>Zona de Comentarios</h2>
+        <p>Aquí va la sección de comentarios...</p>
+    </section>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
