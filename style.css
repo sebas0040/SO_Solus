@@ -59,3 +59,53 @@ button:hover {
 .seccion.active {
     display: block; /* Sección visible cuando está activa */
 }
+
+
+#instalacion img {
+    width: 50%;   /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 50%; /* Evita que la imagen crezca más que el contenedor */
+    display: block; /* Elimina espacios blancos debajo de las imágenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Opcional: Puedes limitar el tamaño máximo de las imágenes para que no crezcan demasiado en pantallas grandes */
+#instalacion {
+    max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
+    margin: 0 auto; /* Centra la sección en la página */
+    padding: 10px;  /* Añade algo de espacio alrededor de la sección */
+}
+
+nav {
+    position: relative;
+}
+
+/* Botones de navegación (anterior y siguiente) */
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 10;
+    width: 10%;
+    height: 20%;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+#prevBtn {
+    left: 0; /* Coloca el botón a la izquierda */
+}
+
+#nextBtn {
+    right: 0; /* Coloca el botón a la derecha */
+}
+
+.btn:hover {
+    opacity: 1; /* Hace los botones más visibles cuando se pasa el cursor sobre ellos */
+}
