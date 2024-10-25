@@ -76,6 +76,14 @@ button:hover {
     padding: 10px;  /* Añade algo de espacio alrededor de la sección */
 }
 
+/* Estilo para las descripciones */
+#description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
 nav {
     position: relative;
 }
