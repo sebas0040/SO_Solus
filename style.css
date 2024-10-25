@@ -74,7 +74,7 @@ button:hover {
     max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
     margin: 0 auto; /* Centra la sección en la página */
     padding: 10px;  /* Añade algo de espacio alrededor de la sección */
-    
+    background-color: rgba(194, 215, 233, 0.575);
 }
 
 /* Estilo para las descripciones */
