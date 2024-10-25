@@ -62,9 +62,9 @@ button:hover {
 
 
 #instalacion img {
-    width: 50%;   /* Ajusta el ancho de la imagen al 100% del contenedor */
+    width: 50%;   /* Ajusta el ancho de la imagen al 50% del contenedor */
     height: auto;  /* Mantiene la proporción de la imagen */
-    max-width: 50%; /* Evita que la imagen crezca más que el contenedor */
+    max-width: 80%; /* Evita que la imagen crezca más que el contenedor */
     display: block; /* Elimina espacios blancos debajo de las imágenes */
     margin: 0 auto; /* Centra la imagen horizontalmente */
 }
@@ -74,6 +74,7 @@ button:hover {
     max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
     margin: 0 auto; /* Centra la sección en la página */
     padding: 10px;  /* Añade algo de espacio alrededor de la sección */
+    
 }
 
 /* Estilo para las descripciones */
@@ -84,9 +85,10 @@ button:hover {
     color: #333;
 }
 
-nav {
+nav{
     position: relative;
 }
+
 
 /* Botones de navegación (anterior y siguiente) */
 .btn {
@@ -116,4 +118,18 @@ nav {
 
 .btn:hover {
     opacity: 1; /* Hace los botones más visibles cuando se pasa el cursor sobre ellos */
+}
+
+#BTx{
+    display: flex;
+    border: solid 1px;
+    border-radius: 9px;
+    border-color: #858181;
+    background-color: rgba(250, 235, 215, 0.452);
+    width: 50%;
+    margin: 0 auto;
+}
+#BTx * {
+    margin-left: 7px;
+
 }

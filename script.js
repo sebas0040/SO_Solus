@@ -30,22 +30,23 @@ const images = [
 ];
 
 // Lista de descripciones para cada imagen
+
 const descriptions = [
-    'Descripción de la Diapositiva 1',
-    'Descripción de la Diapositiva 2',
-    'Descripción de la Diapositiva 3',
-    'Descripción de la Diapositiva 4',
-    'Descripción de la Diapositiva 5',
-    'Descripción de la Diapositiva 6',
-    'Descripción de la Diapositiva 7',
-    'Descripción de la Diapositiva 8',
-    'Descripción de la Diapositiva 9',
-    'Descripción de la Diapositiva 10',
-    'Descripción de la Diapositiva 11',
-    'Descripción de la Diapositiva 12',
-    'Descripción de la Diapositiva 13',
-    'Descripción de la Diapositiva 14',
-    'Descripción de la Diapositiva 15'
+    '<strong>Paso 1:</strong> Presiona el botón <b>"Nueva"</b> (ver icono en la imagen proporcionada).',
+    '<strong>Paso 2:</strong> En <b>"Nombre"</b>, asigna un nombre a tu máquina virtual. En <b>"Tipo"</b>, selecciona <b>"Linux"</b>. En <b>"Versión"</b>, elige <b>"Ubuntu (64-bit)"</b>. Luego, presiona <b>"Next"</b>.',
+    '<strong>Paso 3:</strong> Selecciona el tamaño de <b>RAM</b>. Se recomienda al menos 4 GB (4000 MB o más) para este sistema operativo. Después de elegir el tamaño, presiona <b>"Next"</b>.',
+    '<strong>Paso 4:</strong> Selecciona <b>"Crear un disco duro virtual ahora"</b> y haz clic en <b>"Crear"</b>.',
+    '<strong>Paso 5:</strong> Selecciona el tipo de archivo de disco <b>"VDI (VirtualBox Disk Image)"</b> y presiona <b>"Next"</b>.',
+    '<strong>Paso 6:</strong> Elige la opción <b>"Reservado dinámicamente"</b> y haz clic en <b>"Next"</b>.',
+    '<strong>Paso 7:</strong> Selecciona el tamaño del disco duro virtual. El mínimo recomendado es 10 GB, pero para una mejor experiencia, se sugiere 25 GB o más.',
+    '<strong>Paso 8:</strong> Con la máquina virtual creada, haz clic en el icono de <b>"Configuración"</b>.',
+    '<strong>Paso 9:</strong> Ve a <b>"Sistema"</b> y selecciona <b>"Procesador"</b>. Asigna el número de procesadores deseado y ajusta el <b>"Límite de Ejecución"</b> al 100%.',
+    '<strong>Paso 10:</strong> Entra en <b>"Pantalla"</b> y luego en la subsección <b>"Pantalla"</b>. Asigna la <b>"Memoria de Video"</b> al máximo posible.',
+    '<strong>Paso 11:</strong> Accede a <b>"Almacenamiento"</b> y, en <b>"Controlador: IDE"</b>, verifica que esté vacío. Haz clic en el icono del disco (ver icono en la imagen).',
+    '<strong>Paso 12:</strong> Navega hasta la ubicación donde tienes descargada la imagen ISO del sistema operativo. Selecciona el archivo y presiona <b>"Abrir"</b>.',
+    '<strong>Paso 13:</strong> Verifica que el sistema operativo aparezca en <b>"Controlador: IDE"</b> y haz clic en <b>"Aceptar"</b>.',
+    '<strong>Paso 14:</strong> Selecciona tu máquina virtual y presiona el botón <b>"Iniciar"</b>.',
+    '<strong>Paso 15:</strong> Si todo ha sido configurado correctamente, el sistema operativo debería iniciarse en tu máquina virtual, y verás su escritorio como fondo.'
 ];
 
 // Inicializa el índice de la imagen actual
@@ -58,7 +59,7 @@ const descriptionText = document.getElementById('description');
 // Función para actualizar la imagen y la descripción mostrada
 function updateContent(index) {
     slideshowImage.src = images[index];
-    descriptionText.textContent = descriptions[index];
+    descriptionText.innerHTML = descriptions[index];
 }
 
 // Función para ir a la imagen anterior
@@ -80,3 +81,27 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     }
     updateContent(currentImageIndex);
 });
+
+
+// Función para formatear el texto de las descripciones con negrita en pasos, comillas y paréntesis
+function formatDescription(text) {
+    // Resalta "Paso X:"
+    text = text.replace(/(Paso \d+:)/, '<strong>$1</strong>');
+    
+    // Resalta el texto entre comillas
+    text = text.replace(/"([^"]+)"/g, '<b>"$1"</b>');
+    
+    // Resalta el texto entre paréntesis
+    text = text.replace(/\(([^)]+)\)/g, '<b>($1)</b>');
+    
+    return text;
+}
+
+// Ejemplo de cómo aplicar el formato al mostrar cada descripción
+// let currentIndex = 0;
+function updateDescription(index) {
+    descriptionText.innerHTML = formatDescription(descriptions[index]);
+}
+
+// Inicializa la primera descripción
+// updateDescription(currentIndex);
