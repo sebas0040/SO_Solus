@@ -20,21 +20,6 @@ header {
     flex-wrap: wrap;/* Permite que los botones se alineen en múltiples filas si es necesario */
     justify-content: center; /* Centrar los botones horizontalmente */
  } 
-/* .cabeza{ */
-    /* background-color: #d32020;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-} */
 
 button {
     background-color: #555;
@@ -62,19 +47,37 @@ button:hover {
 
 
 #instalacion img {
-    width: 50%;   /* Ajusta el ancho de la imagen al 50% del contenedor */
+    width: 70%;   /* Ajusta el ancho de la imagen al 50% del contenedor */
     height: auto;  /* Mantiene la proporción de la imagen */
     max-width: 80%; /* Evita que la imagen crezca más que el contenedor */
     display: block; /* Elimina espacios blancos debajo de las imágenes */
     margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
-/* Opcional: Puedes limitar el tamaño máximo de las imágenes para que no crezcan demasiado en pantallas grandes */
 #instalacion {
     max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
     margin: 0 auto; /* Centra la sección en la página */
     padding: 10px;  /* Añade algo de espacio alrededor de la sección */
-    background-color: rgba(194, 215, 233, 0.575);
+    background-color: rgba(177, 188, 197, 0.377);
+
+    
+}
+
+#text1 {
+    display: block; /* Asegura que el párrafo sea un elemento de bloque */
+    margin: 0 auto;
+    width: 70%;
+    color:#61696e;
+
+}
+
+#instalacion h2{
+    display: flex;
+    justify-content: center; 
+    color: rgba(44, 70, 92, 0.856);
+   
 }
 
 /* Estilo para las descripciones */
@@ -121,15 +124,21 @@ nav{
 }
 
 #BTx{
-    display: flex;
-    border: solid 1px;
-    border-radius: 9px;
-    border-color: #858181;
-    background-color: rgba(250, 235, 215, 0.452);
-    width: 50%;
+    display: block; /* Asegura que el párrafo sea un elemento de bloque */
     margin: 0 auto;
+    width: 70%;
+    border:solid 1px;
+    border-radius: 9px;
+    border-color: #323a5e54;
+    background-color: rgba(132, 169, 190, 0.144);
+    
 }
 #BTx * {
-    margin-left: 7px;
-
+    text-align: left;
+    margin-left: 8px;
+    color: rgba(44, 70, 92, 0.856);
 }
+
+
+
+
