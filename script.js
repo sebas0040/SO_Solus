@@ -105,3 +105,22 @@ function updateDescription(index) {
 
 // Inicializa la primera descripción
 // updateDescription(currentIndex);
+
+
+//Programacion del boton menu
+const b_menu = document.getElementById('b_menu');
+const progresBarMenu = document.getElementById('progresBarMenu');
+
+let ancho_max = '800px';
+let ancho_min = '0px';
+
+b_menu.addEventListener('click',function(){
+    if (progresBarMenu.style.width === ancho_max){
+        progresBarMenu.style.width = ancho_min;
+        progresBarMenu.style.height = '45px';
+    }else{
+        progresBarMenu.style.width = ancho_max;
+        progresBarMenu.style.justifyContent = 'round';
+
+    };
+});

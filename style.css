@@ -15,17 +15,16 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    
-    display: flex; /* Usar flexbox */
-    flex-wrap: wrap;/* Permite que los botones se alineen en múltiples filas si es necesario */
-    justify-content: center; /* Centrar los botones horizontalmente */
 
+    display:flex;
     /* Fondo de imagen */
     background-image: url("https://getsol.us//imgs/release-images/2024-10-14/XFCE-Beta.jpg");
     background-size: cover; /* La imagen cubrirá todo el área del header */
     background-position: center; /* Centrar la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
- } 
+    
+
+} 
 
 button {
     background-color: #555;
@@ -33,9 +32,10 @@ button {
     border: none;
     border-radius: 7px;
     padding: 10px 20px;
-    margin:  5px;
-    margin-top: 0 10px;
+    margin:  0px;
+    margin-top: 0 30px;
     cursor: pointer;
+    height: 35px;
 }
 
 button:hover {
@@ -145,9 +145,51 @@ nav{
     color: rgba(44, 70, 92, 0.856);
 }
 
+#b_menu {
+    background-color: #ecf0f181;
+    height: 30px;
+    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    line-height: 30px; /* Igual a la altura para centrar el contenido */
+    text-align: center; /* Centra horizontalmente */
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+#b_menu:hover {
+    background-color: #7f8c8d80;
+}
+
+#b_menu img {
+    vertical-align: middle; /* Asegura una alineación vertical precisa */
+    width: 18px; /* Ajusta el tamaño según sea necesario */
+    height: 18px;
+    
+}
+
+#progresBarMenu { 
+    background-color: #ecf0f181;
+    width: 100%; /* Para hacerlo responsive */
+    max-width: 800px; /* Limita el ancho máximo */
+    border-radius: 40px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    padding-left: 0px;
+
+    display: 1;
+    align-items: round;
+    justify-content: flex-start;
+
+    /* margin-left: 5px; */
+}
 
 
 
+
+/* SECCION DE JULIAN */
 
 /* Estilo general para la sección */
 #justificacion {
