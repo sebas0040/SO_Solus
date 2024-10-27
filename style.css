@@ -1,131 +1,85 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    padding:0;
-    margin-top: 100px;
+    padding: 0;
+    background-color: #e2f0d7; /* Color de fondo más suave */
+    color: #333;
+    transition: background-color 0.3s; /* Transición suave para cambios de fondo */
 }
 
 header {
-    background-color: #a14a4a;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    
-    display: flex; /* Usar flexbox */
-    flex-wrap: wrap;/* Permite que los botones se alineen en múltiples filas si es necesario */
-    justify-content: center; /* Centrar los botones horizontalmente */
- } 
-/* .cabeza{ */
-    /* background-color: #d32020;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-} */
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 button {
-    background-color: #555;
-    color: white;
+    background: #e8491d;
     border: none;
-    border-radius: 7px;
-    padding: 10px 20px;
-    margin:  5px;
-    margin-top: 0 10px;
+    color: white;
+    padding: 10px 15px;
     cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Transiciones para el hover */
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #777;
+    background: #d73818;
+    transform: scale(1.05); /* Aumento en tamaño al pasar el cursor */
 }
 
+/* Estilos de secciones */
 .seccion {
-    padding: 20px;
-    display: none; /* Por defecto, se ocultan las secciones */
-}
-
-.seccion.active {
-    display: block; /* Sección visible cuando está activa */
-}
-
-/* General styling for the section */
-#historia {
-    background-color: #fafafa;  /* Suave fondo claro */
-    padding: 40px;
-    border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2c3e50;  /* Texto oscuro para mejor contraste */
-    line-height: 1.8;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-#historia h1 {
-    font-size: 32px;
-    color: #1abc9c;  /* Verde agua para el título principal */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#historia h3 {
-    font-size: 24px;
-    color: #3498db;  /* Azul para subtítulos */
-    margin-top: 30px;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-}
-
-#historia h4 {
-    font-size: 20px;
-    color: #e74c3c;  /* Rojo para los títulos menores */
-    margin-top: 20px;
-}
-
-#historia p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: justify;  /* Justifica el texto para una mejor presentación */
-}
-
-#historia img {
-    display: block;
+    max-width: 800px;
     margin: 20px auto;
-    border-radius: 50%;  /* Redondea la imagen para un efecto moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.5s, transform 0.5s; /* Transiciones para la animación */
 }
 
-#historia p[style="font-size: 11px;"] {
-    text-align: center;
-    font-style: italic;
-    margin-top: -10px;
-    color: #7f8c8d;  /* Color gris tenue para el pie de foto */
+.seccion.visible {
+    opacity: 1; /* Visibilidad cuando se activa */
+    transform: translateY(0); /* Regresar a la posición original */
 }
 
-#historia ul {
-    margin-left: 20px;
+h1, h2 {
+    color: #35424a;
 }
 
-#historia li {
-    margin-bottom: 10px;
+h1 {
+    margin-bottom: 20px;
 }
 
-#historia a {
-    color: #3498db;
+/* Estilo para listas y enlaces */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #e8491d;
     text-decoration: none;
 }
 
-#historia a:hover {
-    color: #2980b9;
+a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
