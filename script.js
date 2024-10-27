@@ -111,16 +111,24 @@ function updateDescription(index) {
 const b_menu = document.getElementById('b_menu');
 const progresBarMenu = document.getElementById('progresBarMenu');
 
-let ancho_max = '800px';
+let ancho_max = '80%';
 let ancho_min = '0px';
 
-b_menu.addEventListener('click',function(){
-    if (progresBarMenu.style.width === ancho_max){
-        progresBarMenu.style.width = ancho_min;
-        progresBarMenu.style.height = '45px';
-    }else{
-        progresBarMenu.style.width = ancho_max;
-        progresBarMenu.style.justifyContent = 'round';
 
+function mostrarOcultar_menu(){
+    progresBarMenu.style.maxHeight = '35px'
+    if (progresBarMenu.style.opacity === '1' | progresBarMenu.style.opacity === '' ){
+      
+        progresBarMenu.style.opacity = '0';
+        progresBarMenu.style.width = ancho_min
+        
+    }else{
+        progresBarMenu.style.opacity = '1';
+        progresBarMenu.style.width = ancho_max
     };
+}
+
+// Agregar un evento para cuando la transición termine
+progresBarMenu.addEventListener('transitionend', () => {
+    progresBarMenu.style.maxHeight = '200px'
 });

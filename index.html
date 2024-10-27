@@ -19,14 +19,18 @@
 
     <!-- Menú de navegación con botones -->
     <header class="cabeza">
-        <button class="b_menu" id="b_menu"><img src="Icons/menu.png" alt="icono"></button>
-        <nav id = "progresBarMenu" class="progresBarMenu">
-            <button onclick="mostrarSeccion('historia')">Historia</button>
-            <button onclick="mostrarSeccion('instalacion')">Instalación</button>
-            <button onclick="mostrarSeccion('sitios')">Sitios de Interés</button>
-            <button onclick="mostrarSeccion('justificacion')">¿Por qué instalar?</button>
-            <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+
+        <nav id="c_menu" class="c_menu">
+            <button class="b_menu" id="b_menu" onclick="mostrarOcultar_menu()"><img src="Icons/menu.png" alt="icono" ></button>
+            <nav id = "progresBarMenu" class="progresBarMenu">
+                <button onclick="mostrarSeccion('historia')">Historia</button>
+                <button onclick="mostrarSeccion('instalacion')">Instalación</button>
+                <button onclick="mostrarSeccion('sitios')">Sitios de Interés</button>
+                <button onclick="mostrarSeccion('justificacion')">¿Por qué instalar?</button>
+                <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+            </nav>
         </nav>
+        
     </header>
 
     <!-- Secciones de contenido -->

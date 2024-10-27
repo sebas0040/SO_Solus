@@ -6,17 +6,15 @@ body {
 }
 
 header {
-    color: white;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     position: fixed;
     width: 100%;
     height: 15%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; 
 
-    display:flex;
     /* Fondo de imagen */
     background-image: url("https://getsol.us//imgs/release-images/2024-10-14/XFCE-Beta.jpg");
     background-size: cover; /* La imagen cubrirá todo el área del header */
@@ -26,21 +24,73 @@ header {
 
 } 
 
+#c_menu{
+    width: 100%;
+    display: flex;
+    max-height: 120%;
+}
+
+#progresBarMenu { 
+    background-color: #ecf0f100;
+    margin-left: 10px;
+    width: 80%;
+ 
+    border-radius: 40px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.5s ease;
+    padding-left: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+
+}
+
 button {
-    background-color: #555;
-    color: white;
+    background-color: #ecf0f181;
+    color: rgb(53, 52, 52);
     border: none;
     border-radius: 7px;
     padding: 10px 20px;
     margin:  0px;
-    margin-top: 0 30px;
-    cursor: pointer;
     height: 35px;
+    width: 150px;
 }
 
 button:hover {
     background-color: #777;
 }
+
+#b_menu {
+    background-color: #ecf0f181;
+    height: 35px;
+    width: 35px;
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    line-height: 35px; /* Igual a la altura para centrar el contenido */
+    text-align: center; /* Centra horizontalmente */
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+#b_menu:hover {
+    background-color: #7f8c8d80;
+}
+
+#b_menu img {
+    vertical-align: middle; /* Asegura una alineación vertical precisa */
+    width: 18px; /* Ajusta el tamaño según sea necesario */
+    height: 18px;
+    
+}
+
+
 
 .seccion {
     padding: 20px;
@@ -145,46 +195,6 @@ nav{
     color: rgba(44, 70, 92, 0.856);
 }
 
-#b_menu {
-    background-color: #ecf0f181;
-    height: 30px;
-    width: 30px;
-    min-height: 30px;
-    min-width: 30px;
-    border-radius: 50%;
-    line-height: 30px; /* Igual a la altura para centrar el contenido */
-    text-align: center; /* Centra horizontalmente */
-    cursor: pointer;
-    padding: 0;
-    
-}
-
-#b_menu:hover {
-    background-color: #7f8c8d80;
-}
-
-#b_menu img {
-    vertical-align: middle; /* Asegura una alineación vertical precisa */
-    width: 18px; /* Ajusta el tamaño según sea necesario */
-    height: 18px;
-    
-}
-
-#progresBarMenu { 
-    background-color: #ecf0f181;
-    width: 100%; /* Para hacerlo responsive */
-    max-width: 800px; /* Limita el ancho máximo */
-    border-radius: 40px;
-    overflow: hidden;
-    transition: 0.2s ease;
-    padding-left: 0px;
-
-    display: 1;
-    align-items: round;
-    justify-content: flex-start;
-
-    /* margin-left: 5px; */
-}
 
 
 
@@ -248,4 +258,3 @@ nav{
     background-color: #d6eaf8; /* Cambiar el fondo al pasar el mouse */
     cursor: pointer; /* Cambiar el cursor al pasar sobre el ítem */
 }
-
