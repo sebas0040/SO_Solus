@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web Informativa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .seccion {
             display: none; /* Oculta todas las secciones por defecto */
@@ -18,29 +19,146 @@
 
     <!-- Menú de navegación con botones -->
     <header class="cabeza">
-        <nav>
-            <button onclick="mostrarSeccion('historia')">Historia</button>
-            <button onclick="mostrarSeccion('instalacion')">Instalación</button>
-            <button onclick="mostrarSeccion('sitios')">Sitios de Interés</button>
-            <button onclick="mostrarSeccion('justificacion')">¿Por qué instalar?</button>
-            <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+
+        <nav id="c_menu" class="c_menu">
+            <button class="b_menu" id="b_menu" onclick="mostrarOcultar_menu()"><img src="Icons/menu.png" alt="icono" ></button>
+            <nav id = "progresBarMenu" class="progresBarMenu">
+                <button onclick="mostrarSeccion('historia')">Historia</button>
+                <button onclick="mostrarSeccion('instalacion')">Instalación</button>
+                <button onclick="mostrarSeccion('sitios')">Sitios de Interés</button>
+                <button onclick="mostrarSeccion('justificacion')">¿Por qué instalar?</button>
+                <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+            </nav>
         </nav>
+        
     </header>
 
     <!-- Secciones de contenido -->
-    <section id="historia" class="seccion visible">
-        <!-- Byron coronel -->
-        <h2>Historia del Sistema Operativo</h2>
-        <p>Aquí va la información sobre la historia...</p>
+    <section id="historia" class="seccion">
 
+    <!-- <section id="historia" class="seccion visible"> -->
+        <!-- Byron coronel -->
+        <h1>Historia del Sistema Operativo</h1>
+        <p>Solus es un sistema operativo basado en Linux que fue diseñado con
+            el objetivo de proporcionar una experiencia de usuario sencilla y
+            enfocada. Su desarrollo comenzó en 2015, inicialmente como un proyecto
+            personal de Ikey Doherty, quien tenía la visión de crear un sistema
+            operativo que fuera fácil de usar y eficiente.</p>
+
+        <img src="autor.jpeg" style="height:12rem">
+        <p style="font-size: 11px;">Ikey Doherty, Creador Solus OS</p>
+
+
+        <h3>Orígenes</h3>
+        <p>El proyecto comenzó como "Evolve OS", pero posteriormente cambió de
+            nombre a Solus. Desde sus inicios, se enfocó en la creación de un
+            entorno de escritorio propio llamado Budgie, que destaca por su simplicidad
+            y elegancia. La idea era construir un sistema que no dependiera de otros,
+            como Debian o Ubuntu, lo que lo hacía independiente y ágil.</p>
+
+
+        <h3>Desarrollo y Lanzamiento</h3>
+        <p>Solus se lanzó en varias versiones, cada una mejorando sobre la anterior.
+            En 2017, se publicó la primera versión estable, Solus 1.0, que atrajo la
+            atención de la comunidad debido a su enfoque en la experiencia del usuario
+            y su diseño intuitivo.</p>
+
+
+        <h3>Enfoque en el usuario</h3>
+        <p>Una de las características distintivas de Solus es su enfoque en la
+            "experiencia del escritorio". La distribución incluye una selección de
+            software bien integrado y optimizado, ofreciendo una instalación rápida
+            y un sistema que funciona bien desde el primer momento.</p>
+
+
+        <h3>Actualizaciones y evolución</h3>
+        <p>Solus ha seguido evolucionando con el tiempo. Ha adoptado un modelo de
+            lanzamiento continuo, lo que significa que las actualizaciones se
+            implementan de manera regular y constante. Esto permite que los usuarios
+            tengan acceso a las últimas características y mejoras sin tener que esperar
+            por versiones nuevas.</p>
+
+        <h3>Version Actual</h3>
+        <h4>Solus 1.0 (2016)</h4>
+        <p>La primera versión estable de Solus fue lanzada en diciembre de 2016.
+            Esta versión marcó un hito importante al ofrecer un sistema completo,
+            con un enfoque en el rendimiento y una experiencia de usuario pulida.
+            Budgie 10.2, incluido en esta versión, destacaba por su diseño sencillo y elegante.
+        </p>
+
+        <h4>Solus 3 (2018)</h4>
+        <p>En enero de 2018, se lanzó Solus 3, que incluía una serie de mejoras significativas.
+            Esta versión incorporó actualizaciones de software, un mejor soporte de hardware
+            y mejoras en el rendimiento general. Además, se presentaron nuevas versiones de Budgie,
+            así como otros entornos de escritorio como GNOME y MATE.
+        </p>
+            
+        <h4>Solus 4 (2019)</h4>
+        <p>La versión 4 de Solus se lanzó en febrero de 2019 y trajo consigo importantes actualizaciones de software,
+            mejoras en la gestión de paquetes y un enfoque renovado en la estabilidad. También se realizaron cambios
+            en el sistema de instalación y se mejoró el soporte para controladores gráficos.
+        </p>
+
+        <h4>Solus 4.1 (2020)</h4>
+        <p>En enero de 2020, se lanzó Solus 4.1, que continuó con el enfoque en la estabilidad y el rendimiento.
+            Esta versión incluyó actualizaciones para todas las aplicaciones y un mejor soporte para hardware moderno.
+        </p>
+
+        <h4>Solus 4.2 (2021)</h4>
+        <p>Solus 4.2 se lanzó en diciembre de 2021, presentando mejoras en la seguridad y el rendimiento.
+            Se realizaron ajustes en la experiencia del usuario, y se introdujeron nuevas aplicaciones por defecto,
+            brindando a los usuarios una experiencia más completa y satisfactoria.
+        </p>
+
+        <h3>Solus 4.3 (2023 - version instalada)</h3>
+        <p>La versión más reciente, Solus 4.3, se lanzó en mayo de 2023. Esta versión se centró en la
+            modernización del entorno de escritorio Budgie, con nuevas características y mejoras en la usabilidad.
+            También incluyó actualizaciones de seguridad y soporte para las últimas tecnologías de hardware.
+        </p>
+        
+        <h3>Comunidad</h3>
+        <p>La comunidad de Solus es activa y ha crecido en torno al proyecto.
+            A pesar de ser un sistema operativo relativamente pequeño en comparación
+            con gigantes como Ubuntu o Fedora, ha logrado atraer a usuarios que
+            valoran la simplicidad y el enfoque en el escritorio.</p>
+
+
+        <h3>Situación actual</h3>
+        <p>Hoy en día, Solus sigue siendo un sistema operativo popular entre
+            aquellos que buscan una experiencia de usuario fluida y moderna.
+            Continúa evolucionando y recibiendo aportes de su comunidad, manteniéndose
+            fiel a su misión de ser un sistema independiente y fácil de usar.</p>
+
+        <p>En resumen, Solus es un ejemplo de cómo un proyecto de software puede
+            crecer y desarrollarse gracias a una visión clara y al apoyo de la comunidad,
+            ofreciendo una alternativa sólida en el ecosistema de Linux.</p>
     </section>
 
-    <section id="instalacion" class="seccion">
-        <!-- Sebastian Armero -->
-        <h2>Instalación y Configuración</h2>
-        <p>Aquí va la información sobre la instalación...</p>
-        <iframe width="779" height="487" src="https://www.youtube.com/embed/Bn4rL1emKzk?list=RDBn4rL1emKzk" title="AMANECIENDO - Adolfo Echeverria (cumbia colombiana)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>                                
+
+    <!-- <section id="instalacion" class="seccion"> -->
+        <section id="instalacion" class="seccion visible">
+            <h2>Instalación y Configuración</h2>
+            <nav id="text1">
+                <p>
+                    Si aún no la tienes descarga la última versión de VirtualBox o la que usted desee desde <a target="_blank" href="https://www.virtualbox.org/wiki/Download_Old_Builds_6_1"> aquí</a></p>    
+            </nav>
+           
+            <nav>
+
+                <button id="prevBtn" class="btn"><i class="fas fa-arrow-left"></i></button>
+            
+                <img id="slideshow" src="Img_pro_instalacion/Diapositiva1.png" alt="Diapositiva 1">
+               
+                <button id="nextBtn" class="btn"><i class="fas fa-arrow-right"></i></button>
+                
+                <nav id= "BTx" class="boxText">
+                    <p id="description"><b>Paso 1:</b> Presiona el botón <b>"Nueva"</b> (ver icono en la imagen proporcionada).  </p>
+                </nav>
+                
+            </nav>
+           
+        </section>
+        
 
     <section id="sitios" class="seccion">
         <!-- Marlon Hernandes -->
@@ -87,10 +205,22 @@
     <section id="justificacion" class="seccion">
         <!-- Julian Florez -->
         <h2>¿Por qué instalar este Sistema Operativo?</h2>
-        <p>Aquí va la justificación para instalar el sistema...</p>
-
-
+        <p>Solus es una excelente opción como sistema operativo por varias razones que lo distinguen de otras distribuciones de Linux. A continuación, te explicamos los principales beneficios de instalar Solus en tu equipo:</p>
+        
+        <ul>
+            <li><strong>Rendimiento optimizado:</strong> Solus ofrece un rendimiento rápido y eficiente, incluso en hardware más antiguo, sin comprometer la estabilidad ni la funcionalidad.</li>
+            <li><strong>Experiencia de usuario intuitiva:</strong> Con su entorno de escritorio Budgie, moderno y personalizable, y opciones adicionales como GNOME, MATE o Plasma, Solus facilita una experiencia limpia y fácil de usar.</li>
+            <li><strong>Software actualizado continuamente:</strong> Al ser una distribución de lanzamiento continuo (<em>rolling release</em>), Solus garantiza que siempre tengas las últimas versiones de software sin necesidad de reinstalaciones.</li>
+            <li><strong>Fácil de instalar y usar:</strong> Su instalador gráfico es simple y directo, ideal para usuarios principiantes. Además, viene con aplicaciones preinstaladas para comenzar a trabajar inmediatamente.</li>
+            <li><strong>Compatibilidad con herramientas modernas:</strong> Solus soporta tecnologías como Flatpak y Snap, permitiendo la instalación de una amplia variedad de aplicaciones. También es compatible con Steam, lo que lo hace una opción atractiva para gamers.</li>
+            <li><strong>Privacidad y seguridad:</strong> Como cualquier sistema Linux, Solus es seguro por defecto y se beneficia de una comunidad activa que asegura su constante actualización y mantenimiento.</li>
+            <li><strong>Comunidad activa:</strong> Aunque su comunidad no es tan grande como la de otras distribuciones, Solus cuenta con usuarios comprometidos que ofrecen soporte y una documentación sólida.</li>
+            <li><strong>Liviano y eficiente:</strong> Su diseño minimalista y eficiente permite ejecutar tareas cotidianas sin consumir muchos recursos, ideal para equipos con especificaciones más modestas.</li>
+        </ul>
+        
+        <p>En resumen, Solus es una distribución moderna, ligera y fácil de usar, ideal tanto para usuarios nuevos como experimentados que buscan un sistema operativo estable, rápido y actualizado.</p>
     </section>
+    
 
     <section id="comentarios" class="seccion">
         <!-- Marlon Hernandes -->
