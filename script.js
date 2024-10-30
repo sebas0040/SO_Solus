@@ -132,3 +132,25 @@ function mostrarOcultar_menu(){
 progresBarMenu.addEventListener('transitionend', () => {
     progresBarMenu.style.maxHeight = '200px'
 });
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_ltv3k5j';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar comentario';
+      alert('Gracias por tu comentario');
+    }, (err) => {
+      btn.value = 'Enviar comentario';
+      alert(JSON.stringify(err));
+    });
+});
+  
