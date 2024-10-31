@@ -11,6 +11,24 @@ function mostrarSeccion(seccionId) {
 
 
 // Lista de las imágenes que vas a mostrar
+// const images = [
+//     'Img_pro_instalacion/Diapositiva1.png',
+//     'Img_pro_instalacion/Diapositiva2.png',
+//     'Img_pro_instalacion/Diapositiva3.png',
+//     'Img_pro_instalacion/Diapositiva4.png',
+//     'Img_pro_instalacion/Diapositiva5.png',
+//     'Img_pro_instalacion/Diapositiva6.png',
+//     'Img_pro_instalacion/Diapositiva7.png',
+//     'Img_pro_instalacion/Diapositiva8.png',
+//     'Img_pro_instalacion/Diapositiva9.png',
+//     'Img_pro_instalacion/Diapositiva10.png',
+//     'Img_pro_instalacion/Diapositiva11.png',
+//     'Img_pro_instalacion/Diapositiva12.png',
+//     'Img_pro_instalacion/Diapositiva13.png',
+//     'Img_pro_instalacion/Diapositiva14.png',
+//     'Img_pro_instalacion/Diapositiva15.png'
+// ];
+
 const images = [
     'Img_pro_instalacion/Diapositiva1.PNG?raw=true',
     'Img_pro_instalacion/Diapositiva2.PNG?raw=true',
@@ -29,7 +47,7 @@ const images = [
     'Img_pro_instalacion/Diapositiva15.PNG?raw=true'
 ];
 
-https://github.com/sebas0040/sebas0040.github.io/blob/main/Img_pro_instalacion/Diapositiva10.PNG?raw=true
+
 // Lista de descripciones para cada imagen
 
 const descriptions = [
