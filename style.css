@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding:0;
-    margin-top: 100px;
+
+    transition: 0.5s;
     
 }
 
@@ -11,7 +12,6 @@ header {
     /* text-align: center; */
     position: fixed;
     width: 100%;
-    height: 20%;
     top: 0;
     left: 0;
     z-index: 1000; 
@@ -22,7 +22,7 @@ header {
     background-position: center; /* Centrar la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     
-
+    transition: 0.5s;
 } 
 
 
@@ -48,6 +48,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
 
+    transition: 0.5s;
     
 
 }
@@ -96,7 +97,6 @@ button:hover {
 
 .seccion {
     padding: 20px;
-    top:20%;
     display: none; /* Por defecto, se ocultan las secciones */
 }
 

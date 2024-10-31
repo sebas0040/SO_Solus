@@ -135,11 +135,12 @@ let ancho_min = '0px';
 
 
 function mostrarOcultar_menu(){
-    progresBarMenu.style.maxHeight = '35px'
+    // progresBarMenu.style.maxHeight = '35px'
     if (progresBarMenu.style.opacity === '1' | progresBarMenu.style.opacity === '' ){
       
         progresBarMenu.style.opacity = '0';
-        progresBarMenu.style.width = ancho_min
+        progresBarMenu.style.width = ancho_min;
+
         
     }else{
         progresBarMenu.style.opacity = '1';
@@ -149,7 +150,7 @@ function mostrarOcultar_menu(){
 
 // Agregar un evento para cuando la transición termine
 progresBarMenu.addEventListener('transitionend', () => {
-    progresBarMenu.style.maxHeight = '200px'
+    // progresBarMenu.style.maxHeight = '200px'
 });
 
 const btn = document.getElementById('button');
@@ -175,3 +176,31 @@ document.getElementById('form')
     
 });
   
+
+const header = document.querySelector('#cabeza');
+const cuerpo = document.querySelector('#cuerpo')
+const lim_superior = 939;
+const lim_half = 564;
+const lim_inferior = 375;
+
+// Función para ajustar la altura del header
+function ajustarAlturaHeader() {
+    const anchoVentana = parseInt(window.getComputedStyle(header).width);
+    console.log('ancho: ',anchoVentana, 'alto: ',window.getComputedStyle(header).height)
+    if (lim_inferior > anchoVentana){
+        header.style.height = '175px';
+        cuerpo.style.marginTop = '175px'
+    }else if (anchoVentana < lim_half && anchoVentana >= lim_inferior){
+        header.style.height = '105px';
+        cuerpo.style.marginTop = '105px';
+    }else{
+        header.style.height = '70px';
+        cuerpo.style.marginTop = '70px'
+    }
+}
+
+// Llama a la función al cargar la página
+window.addEventListener('load', ajustarAlturaHeader);
+
+// Llama a la función al cambiar el tamaño de la ventana
+window.addEventListener('resize', ajustarAlturaHeader);
