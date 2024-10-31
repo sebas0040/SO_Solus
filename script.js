@@ -148,9 +148,11 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Enviar comentario';
       alert('Gracias por tu comentario');
+      this.reset(); // Limpia los campos del formulario
     }, (err) => {
       btn.value = 'Enviar comentario';
       alert(JSON.stringify(err));
     });
+    
 });
   
