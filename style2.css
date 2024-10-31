@@ -1,0 +1,17 @@
+#c_video {
+    max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
+    margin: 0 auto; /* Centra la sección en la página */
+    padding: 10px;  /* Añade algo de espacio alrededor de la sección */
+    background-color: rgba(177, 188, 197, 0.377);
+    size: 300px;
+}
+
+#video_instalacion {
+    width: 70%;   /* Ajusta el ancho de la imagen al 50% del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 80%; /* Evita que la imagen crezca más que el contenedor */
+    display: block; /* Elimina espacios blancos debajo de las imágenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
