@@ -457,3 +457,45 @@ nav{
 #comentarios .sticky-xl-bottom {
     margin-top: 20px;
 }
+
+#autores .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px;
+    max-width: 600px; /* Limitar el ancho total */
+    padding: 20px;
+    margin: 0 auto; /* Centrar el contenedor */
+    justify-items: center; 
+}
+
+#autores .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#autores .card:hover {
+    transform: scale(1.05);
+}
+
+#autores .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+#autores .card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#autores .card-text {
+    color: #555;
+}
