@@ -1,16 +1,15 @@
 #c_video {
-    max-width: 1200px; /* Ajusta esto al máximo tamaño que quieras para el contenedor */
-    margin: 0 auto; /* Centra la sección en la página */
-    padding: 10px;  /* Añade algo de espacio alrededor de la sección */
-    
+    max-width: 90%; /* Tamaño máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-top: 20px;
+    min-height: 400px;
 }
 
 #video_instalacion {
-    width: 70%;   /* Ajusta el ancho de la imagen al 50% del contenedor */
-    height: auto;  /* Mantiene la proporción de la imagen */
-    max-width: 80%; /* Evita que la imagen crezca más que el contenedor */
-    display: block; /* Elimina espacios blancos debajo de las imágenes */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+    width: 80%; /* Ancho completo del contenedor */
+    min-height: 400px; /* Altura automática para mantener proporción */
+    max-width: 80%; /* Máximo tamaño dentro del contenedor */
+    display: block; /* Elimina espacios blancos */
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 9px 9px 0 0; /* Bordes redondeados superiores */
 }
