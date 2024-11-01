@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding:0;
-
+    min-width: 375px;
     transition: 0.5s;
     
 }
@@ -23,6 +23,7 @@ header {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     
     transition: 0.5s;
+    min-width: 375px;
 } 
 
 
